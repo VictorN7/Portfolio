@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(#763ef8, #2b306d );
+    font-family: 'Poppins', sans-serif;
+}
+
+/* FONTES */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Mirza&display=swap'); */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Gugi&family=Mirza&display=swap'); */
+
+/* 
+font-family: 'Bungee Shade', cursive;
+font-family: 'Gugi', cursive;
+font-family: 'Mirza', cursive;
+*/
+/* -------------------------------------- */
+
+/* --------------- HEADER --------------- */
+
+/* -- Menu -- */
+
+.header-container{
+    width: 100%;
+    background-color: rgb(67, 68, 68);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ header .logo{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.nav-container{
+    height: auto;
+    display: inline-block;
+}
+
+.ul-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ul-container li {
+    list-style: none;
+    margin-left: 30px;
+  
+}
+.ul-container li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* ---------- */
+
+/* -------------------------------------- */
