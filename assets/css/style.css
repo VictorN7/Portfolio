@@ -31,25 +31,20 @@ a :hover{
 /* -- Menu -- */
 
 
- nav .logo{
+.logo{
     font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 4px;
-
-    background-image: linear-gradient(to bottom, rgb(36, 36, 36), rgb(52, 53, 73), rgb(119, 19, 233));
-    color: rgb(255, 255, 255);
-    background-clip: text;
-    -webkit-background-clip: text;
-  
-    /* Adicionado: */
-    -webkit-text-fill-color: transparent;
+    color: #8f1fcf;
+    transition: 1.9s ease-out;
+    border-bottom: 1px solid #ffffff00;
 }
 .logo:hover {
     opacity: 0.7;
-    background-image: linear-gradient(to bottom, rgb(97, 29, 185), rgb(97, 29, 185), rgb(97, 29, 185));
     color: rgb(255, 255, 255);
-    transition-duration:  1.5s ease-in ease-out;
+    transition:  1.9s ease-in ;
+    border-bottom: 1px solid #8f1fcf;
 }
 .nav-container{
     display: flex;
@@ -94,12 +89,19 @@ a :hover{
 
 /* -------------------------------------- */
 
-/* ---- QUEM SOU ---- */
+/* ---- BEM VINDO ---- */
 
+
+
+/* TITULO DO DIV-CONTAINER */
 
 .titulo-h2{
     font-size: 50px;
 }
+
+/* ---------------------------- */
+
+/* ---- BARRA DE SEPARAÇÃO ---- */
 
 .separacao{
     height: 60vh;
@@ -109,11 +111,21 @@ a :hover{
     margin-right: 1vw;
 }
 
+/* ---------------------------- */
+
+
+/* ---- GIFF DO DIV-CONTAINER ---- */
+
 .giff-animacao{
     height: 60vh;
     box-shadow: 1px 1px 0px 0px #8f1fcf;
     border-radius: 200px;
 }
+
+/* ---------------------------- */ 
+
+/* TODAS AS DIVS DO CONTAINER */
+
 .div-container1 span{
     color: #8f1fcf;
     font-weight: 700;
@@ -136,19 +148,48 @@ a :hover{
     
 }
 
-
-
 .div-conteudo{
     margin-top: 5px;
     font-size: 18px;
     font-weight: 500;
 }
- 
 
-/* -------------------------------------- */
+#quem-sou{
+    transition: 0.3s ease-in;
+}
+
+/* ---- FIM DO BEM VINDO ---- */
 
 
+.div-arrow-down{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.botao-arrow-down{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f7f7f700;
+    color: #8f1fcf;
+    border: none;
+    
+}
+.botao-arrow-down span{
+    transition: 0.9s ease-out;
+    border: 0px dotted #ffffff00;
+}
+.botao-arrow-down span:hover {
+   color: #000000;
+   transition: 0.9s ease-in;
+   border-bottom: 2px dotted #8f1fcf;
+   border-right: 2px dotted #8f1fcf;
+   border-left: 2px dotted #8f1fcf;
+   
+}
 /* -------------------------------------- */
 
 
