@@ -1,5 +1,9 @@
+/* FONTES */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
 
+
+/* -------------------------------------- */
 
 *{
     margin: 0%;
@@ -12,65 +16,95 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* FONTES */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Mirza&display=swap'); */
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Gugi&family=Mirza&display=swap'); */
-
-/* 
-font-family: 'Bungee Shade', cursive;
-font-family: 'Gugi', cursive;
-font-family: 'Mirza', cursive;
-*/
-/* -------------------------------------- */
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a :hover{
+    opacity: 0.7;
+}
 
 /* --------------- HEADER --------------- */
 
 /* -- Menu -- */
 
-.header-container{
-    width: 100%;
-    background-color: rgb(67, 68, 68);
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    padding: 15px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
- header .logo{
-    color: rgb(255, 255, 255);
+
+ nav .logo{
     font-size: 25px;
     font-weight: 400;
-    text-decoration: none;
-    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 .nav-container{
-    height: auto;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272727;
+    height: 12vh;
 }
 
 .ul-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
 
 }
 
 .ul-container li {
-    list-style: none;
-    margin-left: 30px;
+    margin-left: 30px; 
+    letter-spacing: 1px;
   
 }
-.ul-container li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+
+/* ----- Menu Mobile ----- */
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+
 }
-/* ---------- */
+.menu-mobile div{
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    margin: 6px;
+}
 
 /* -------------------------------------- */
+/* Essa classe .active vai ser criada pelo js */
+.ul-container.ativar{
+    transform: translateX(0);
+}
+
+/* @media (max-width: 800px){
+    .menu-mobile{
+        display: block;
+    }
+} */
+
+@media (max-width: 800px){
+
+    body{
+        overflow-x: hidden; /* Esconde do body qualquer coisa que transbordar/ultrapassar */
+    }
+    .ul-container{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #272727;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%); /*expande o width até o limite de 50vw, mas precisa do overflow-x: hiddern; */
+    }
+    .ul-container li{
+        margin-left: 0%;
+        opacity: 0;
+    }
+    .menu-mobile{
+        display: block;
+
+    }
+
+}
