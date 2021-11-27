@@ -37,7 +37,7 @@ a :hover{
     text-transform: uppercase;
     letter-spacing: 4px;
 
-    background-image: linear-gradient(to bottom, rgb(36, 36, 36), rgb(63, 67, 78), rgb(119, 0, 255));
+    background-image: linear-gradient(to bottom, rgb(36, 36, 36), rgb(63, 67, 78), rgb(119, 19, 233));
     color: rgb(255, 255, 255);
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,8 +70,8 @@ a :hover{
     letter-spacing: 1px;
 }
 
-.ul-container li:hover {
-    
+.ul-container li a:hover {
+    color: rgb(97, 29, 185);
 }
 
 /* ----- Menu Mobile ----- */
