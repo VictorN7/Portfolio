@@ -5,18 +5,26 @@ class NavbarMobile{
 
         this.menuMobile = document.querySelector(menuMobile);
         this.listaNav = document.querySelector(listaNav);
-        this.linksNav = document.querySelector(linksNav);
+        this.linksNav = document.querySelectorAll(linksNav);
 
-        this.classeAtiva = "ativar";
+        this.classeAtiva = "active";  
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+    animarLinks(){
+        this.linksNav.forEach((link, index) => {
+            link.style.animation?(link.style.animation = ""): (link.style.animation = `navOpacidade 0.5s ease forwards ${index / 7 + 0.3}s`);
+        });
     }
 
     handleClick(){
-        console.log(this);
         this.listaNav.classList.toggle(this.classeAtiva);
+        this.menuMobile.classList.toggle(this.classeAtiva);
+        this.animarLinks();
     }
 
     addClickEvent(){
-        this.menuMobile.addEventListener("click", this.handleClick);
+    this.menuMobile.addEventListener("click", this.handleClick);
     }
     inicia(){
         if (this.menuMobile) {
@@ -27,10 +35,6 @@ class NavbarMobile{
 
 }
 
-const navbarMobile = new NavbarMobile(
-    ".menu-mobile",
-    ".ul-container",
-    ".ul-container li",
-);
+const navbarMobile = new NavbarMobile(".menu-mobile",".ul-container",".ul-container li");
 
 navbarMobile.inicia();

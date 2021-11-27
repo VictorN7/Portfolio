@@ -8,13 +8,14 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Poppins', sans-serif;
 }
-body{
+/* body{
     height: 1000px;
     width: 100%;
     background: linear-gradient(#763ef8, #2b306d );
-    font-family: 'Poppins', sans-serif;
-}
+   
+} */
 
 a{
     color: #ffffff;
@@ -35,12 +36,26 @@ a :hover{
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 4px;
+
+    background-image: linear-gradient(to bottom, rgb(36, 36, 36), rgb(63, 67, 78), rgb(119, 0, 255));
+    color: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+.logo:hover {
+    opacity: 0.7;
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129), rgb(80, 80, 80), rgb(49, 49, 49));
+    color: rgb(255, 255, 255);
+    transition-duration:  1.5s ease-in ease-out;
 }
 .nav-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #272727;
+    background-color: #242424;
     height: 12vh;
 }
 
@@ -53,7 +68,10 @@ a :hover{
 .ul-container li {
     margin-left: 30px; 
     letter-spacing: 1px;
-  
+}
+
+.ul-container li:hover {
+    
 }
 
 /* ----- Menu Mobile ----- */
@@ -67,44 +85,63 @@ a :hover{
     height: 2px;
     background: #ffffff;
     margin: 6px;
+    transition: 0.3s;
 }
 
 /* -------------------------------------- */
 /* Essa classe .active vai ser criada pelo js */
-.ul-container.ativar{
-    transform: translateX(0);
-}
-
-/* @media (max-width: 800px){
-    .menu-mobile{
-        display: block;
-    }
-} */
-
-@media (max-width: 800px){
+@media (max-width: 900px){
 
     body{
-        overflow-x: hidden; /* Esconde do body qualquer coisa que transbordar/ultrapassar */
-    }
-    .ul-container{
+        overflow-x: hidden;  /* Esconde do body qualquer coisa que transbordar/ultrapassar */
+     }
+    .ul-container {
         position: absolute;
         top: 8vh;
         right: 0;
         width: 50vw;
         height: 92vh;
         background: #272727;
-        flex-direction: column;
+         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%); /*expande o width até o limite de 50vw, mas precisa do overflow-x: hiddern; */
+        transform: translateX(100%);  /*expande o width até o limite de 50vw, mas precisa do overflow-x: hiddern; */
+        transition: transform 0.4s ease-in; /* ease-in = chegada suave */
     }
-    .ul-container li{
+   .ul-container li{
         margin-left: 0%;
         opacity: 0;
     }
     .menu-mobile{
         display: block;
+    } 
 
+}
+
+.ul-container.active{
+    transform: translateX(0);
+}
+
+@keyframes navOpacidade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
     }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
+
+.menu-mobile.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu-mobile.active .linha2{
+    transform: rotate(-90deg) translate(-4px, -10px);
+}
+
+.menu-mobile.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px);
 }
