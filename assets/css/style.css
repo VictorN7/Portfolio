@@ -19,13 +19,13 @@ a :hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #8f1fcf;
-    transition: 1.9s ease-out;
+    transition: 1.8s ease-out;
     border-bottom: 1px solid #ffffff00;
 }
 .logo:hover {
     opacity: 0.7;
     color: rgb(255, 255, 255);
-    transition:  1.9s ease-in ;
+    transition:  1.8s ease-in ;
     border-bottom: 1px solid #8f1fcf;
 }
 .nav-container{
@@ -152,7 +152,7 @@ a :hover{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 1% 0% 1% 0%;
 }
 
 .botao-arrow-down{
@@ -163,9 +163,9 @@ a :hover{
     background-color: #f7f7f700;
     color: #8f1fcf;
     border: none;
-    transition: 1.5s ease-out;
+    transition: 1.2s ease-out;
     font-size: 15px;
-    animation: OscilarCor 4s infinite;
+    animation: OscilarCor 3s infinite;
 }
 
 @keyframes OscilarCor {
@@ -191,35 +191,27 @@ a :hover{
 
 .div-todo-conteudo{
    /*  animation: fundoDivTodoConteudo 4s infinite; */
-    background-color: #474747;
+    background-color: #ffffff;
     
 }
-/* @keyframes fundoDivTodoConteudo{
-    0%{
-        background-color: #272727;
-    }
-    50%{
-        background-color: #624075;
-    }
-    100%{
-        background-color: #272727;
-    }
-} */
 
-.sections-conteudo{
+
+.sections{
     background-color: #bd3d3d;
     color: #ffffff;
     display: flex;
     justify-content: center;
-    margin: 5% 0% 0% 10%;
+    margin: 0% 0% 0% 10%;
     height: 80vh;
     width: 80%;
 }
 
-.div-sobre-conteudo{
+.div-sobre{
     background-color: #161616;
     border-radius: 4px;
     margin: 0% 0% 0% 0% ;
+    width: 100%;
+    height: 100%;
 }
 .div-sobre-mim{
     display: flex;
@@ -234,7 +226,7 @@ a :hover{
     background-color: #8f1fcf;
     margin: 0% 2% 2% 0% ;
 }
-.div-sobre-mim-3{
+.div-sobre-mim-2{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -253,9 +245,114 @@ a :hover{
 .conteudo-sobre-mim h3{
     font-size: 40px;
 }
-.conteudo-sobre-mim{
-    width:60%;
+.conteudo-sobre-mim span{
+    font-size: 25px;
+    color: #8f1fcf;
 }
+.conteudo-sobre-mim{
+    width:100%;
+    height: 100%;
+}
+
+.footer-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    border-top: solid 2px #8f1fcf;
+    animation: corBorder 10s infinite;
+    background-color: #333333;
+}
+
+@keyframes corBorder{
+    0%{
+        border-top:solid 5px #272727;
+    }
+    50%{
+        border-top:solid 5px #8f1fcf;;
+    }
+    100%{
+       border-top:solid 5px #272727;
+    }
+}
+
+.div-footer{
+    width: 100%;
+    height: 80%; 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-conteudo-footer{
+   
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-conteudo-footer h3{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.icones-contato{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.icones-contato a i{
+    font-size: 40px;
+    transition: 0.5s ease-out;
+}
+.icones-contato a{
+    padding: 20px;
+}
+
+.div-footer2{
+    width: 100%;
+    height: 30%;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-conteudo-footer2{
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.icone1:hover{
+    font-size: 50px;
+    color: #8f1fcf;
+    transition: 0.5s ease-in;
+}
+
+.icone2:hover{
+    font-size: 50px;
+    color: #1f8fcf;
+    transition: 0.5s ease-in;
+}
+
+.icone3:hover{
+    font-size: 50px;
+    color: #ffee00;
+    transition: 0.5s ease-in;
+}
+
+
 
 
 
