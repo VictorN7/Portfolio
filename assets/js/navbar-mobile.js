@@ -7,7 +7,7 @@ class NavbarMobile{
         this.listaNav = document.querySelector(listaNav);
         this.linksNav = document.querySelectorAll(linksNav);
 
-        this.classeAtiva = "active";  
+        this.classeAtiva = "active";
 
         this.handleClick = this.handleClick.bind(this);
     }

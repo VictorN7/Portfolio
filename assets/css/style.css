@@ -21,6 +21,7 @@ a :hover{
     color: #8f1fcf;
     transition: 1.8s ease-out;
     border-bottom: 1px solid #ffffff00;
+    text-decoration: none;
 }
 .logo:hover {
     opacity: 0.7;
@@ -34,22 +35,28 @@ a :hover{
     align-items: center;
     background-color: #242424;
     height: 12vh;
-    border-bottom: 2px solid #8f1fcf;
+   /*  border-bottom: 2px solid #8f1fcf; */
+   color: #ffffff;
 }
 
 .ul-container{
     display: flex;
-    list-style: none;
-
+    margin: 0%;
 }
 
 .ul-container li {
     margin-left: 30px; 
     letter-spacing: 1px;
+    list-style: none;
 }
 
+.ul-container li a{
+    text-decoration: none;
+    color: #ffffff;
+}
 .ul-container li a:hover {
     color: rgb(97, 29, 185);
+    
 }
 
 /* ----- Menu Mobile ----- */
@@ -127,17 +134,14 @@ a :hover{
 .div-container1 {
     
 }
-
 .div-container2 {
     
 }
-
 .div-conteudo{
     margin-top: 5px;
     font-size: 18px;
     font-weight: 500;
 }
-
 #quem-sou{
     transition: 0.3s ease-in;
 }
@@ -153,19 +157,20 @@ a :hover{
     justify-content: center;
     align-items: center;
     margin: 1% 0% 1% 0%;
+    
 }
 
 .botao-arrow-down{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #f7f7f700;
     color: #8f1fcf;
     border: none;
     transition: 1.2s ease-out;
     font-size: 15px;
     animation: OscilarCor 3s infinite;
+}
+
+.botao-arrow-down p{
+    margin: 0%;
 }
 
 @keyframes OscilarCor {
@@ -182,6 +187,7 @@ a :hover{
 .botao-arrow-down:hover {
    color: #a0a0a0;
    transition: 1.5s ease-in;
+   animation: none;
 }
 
 /* ---- FLECHA DE INDICAÇÃO ----*/
@@ -192,32 +198,51 @@ a :hover{
 .div-todo-conteudo{
    /*  animation: fundoDivTodoConteudo 4s infinite; */
     background-color: #ffffff;
-    
 }
 
 
-.sections{
-    background-color: #bd3d3d;
+.sections1{
+    background-color: #ffffff;
     color: #ffffff;
     display: flex;
     justify-content: center;
     margin: 0% 0% 0% 10%;
-    height: 80vh;
+    height: 90vh;
     width: 80%;
 }
 
-.div-sobre{
+.sections2{
+    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 0% 10%;
+    height: 140vh;
+    width: 80%;
+}
+
+
+
+.quem-sou{
     background-color: #161616;
     border-radius: 4px;
     margin: 0% 0% 0% 0% ;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.div-sobre-mim{
+.div-quem-sou{
     display: flex;
     flex-direction: column;
+
     align-items: center;
-    margin: 5% 10% 10% 10%;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    margin: 0% 0% 0% 0%; 
+    /* margin: 5% 10% 10% 10%; */
 }
 
 .separacao1{
@@ -233,6 +258,12 @@ a :hover{
     justify-content: center;
     margin:  5% 5% 5% 5%;
 }
+
+.titulo-sobre-mim{
+    display: flex;
+    justify-content: flex-start;
+}
+
 .titulo-sobre-mim h2 {
     font-size: 30px;
     color: #ffffff;
@@ -242,10 +273,20 @@ a :hover{
     color: #8f1fcf;
 }
 
-.conteudo-sobre-mim h3{
+.conteudo-sobre-mim-1{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+
+.conteudo-sobre-mim-2{
+    width:100%;
+    height: 100%;
+}
+.conteudo-sobre-mim-1 h3 {
     font-size: 40px;
 }
-.conteudo-sobre-mim span{
+.conteudo-sobre-mim-1 span {
     font-size: 25px;
     color: #8f1fcf;
 }
@@ -253,6 +294,281 @@ a :hover{
     width:100%;
     height: 100%;
 }
+
+
+
+
+
+
+
+/* -----------------------------
+------------PROJETOS--------------
+--------------------------------
+-------------------------------- */
+.titulo-projetos{
+    
+    margin-top: 5%;
+    margin-bottom: 20px;
+
+}
+
+.titulo-projetos h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+.titulo-projetos h2 span{
+    font-size: 30px;
+    color: #8f1fcf;
+}
+
+.projetos{
+    background-color: #161616;
+    border-radius: 4px;
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-projetos{
+    /* background: #8f1fcf; */
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-projetos{
+    /* background-color: #3f3f3f;  */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0%;
+}
+
+.div-todos-projetos{
+   /*  background-color: rgb(177, 167, 154); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+}
+.conjunto-projetos{
+    width: 100%;
+    height: 100%;
+}
+.linha-projetos{
+    /* width: 100%;
+    height: 100%; */
+    /* display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    flex-wrap: wrap; */
+
+    margin: 0%;
+    padding: 0%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.bloco-projeto{
+    background-color: #242424; 
+    width: 30%;
+    height: 35%;
+    border-radius: 5px;
+   
+}
+.bloco-projeto div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.bloco-projeto h3{
+    font-size: 20px;
+}
+
+.bloco-projeto a:hover{
+    color: #8f1fcf;
+    filter: blur(9);
+    border: 10px solid #451fcf;
+    border-radius: 100px;
+}
+.bloco-projeto div:hover{
+
+}
+
+
+/*  */
+
+.container{
+    /* width: 70vw;
+    height: 60vh; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    width: 300px;
+    height: 300px;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.9s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background-color: #161616;
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+   
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0px);
+}
+
+.container .card .face.face2 .content p{
+    color: #161616;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display: inline-block;
+
+    text-decoration: none;
+    font-weight: 900;
+    color: #8f1fcf;
+    padding: 5px;
+    
+}
+
+.container .card .face.face2 .content a:hover{
+    background-color: #8f1fcf;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+
+
+
+.cadastro{
+    background-image: url(../img/carrossel/Cadastro.png);
+}
+.weather{
+    background-image: url(../img/carrossel/Weather.png);
+}
+.dashboard{
+    background-image: url(../img/carrossel/Dashboard.png);
+}
+.imc-calculadora{
+    background-image: url(../img/carrossel/IMC2.png);
+}
+.breve{
+    background-image: url(../img/carrossel/);
+}
+/* .cadastro{
+    background-image: url(../img/carrossel/Cadastro.png);
+} */
+
+
+.separacao1{
+    height: 30vh;
+    width: 2px;
+    background-color: #8f1fcf;
+    margin: 0% 2% 2% 0% ;
+}
+/* .div-sobre-mim-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:  5% 5% 5% 5%;
+} */
+
+
+
+/* -----------------------------
+------------FOOTER--------------
+--------------------------------
+-------------------------------- */
+
 
 .footer-container{
     width: 100%;
@@ -282,7 +598,6 @@ a :hover{
 .div-footer{
     width: 100%;
     height: 80%; 
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,11 +627,14 @@ a :hover{
 }
 
 .icones-contato a i{
-    font-size: 40px;
+    font-size: 30px;
     transition: 0.5s ease-out;
+    
 }
 .icones-contato a{
     padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .div-footer2{
@@ -338,25 +656,24 @@ a :hover{
     font-size: 50px;
     color: #8f1fcf;
     transition: 0.5s ease-in;
+   
 }
 
 .icone2:hover{
     font-size: 50px;
     color: #1f8fcf;
     transition: 0.5s ease-in;
+    
 }
 
 .icone3:hover{
     font-size: 50px;
     color: #ffee00;
     transition: 0.5s ease-in;
+    
 }
 
 
-
-
-
-
 /* -------------------------------------- */
 
 /* -------------------------------------- */
@@ -366,7 +683,22 @@ a :hover{
 /* -------------------------------------- */
 
 
-@media (max-width: 900px){
+@media (max-width: 990px){
+
+
+    .div-container{
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .div-footer2{
+        font-size: 14px;
+    }
 
     body{
         overflow-x: hidden;  /* Esconde do body qualquer coisa que transbordar/ultrapassar */
@@ -400,6 +732,14 @@ a :hover{
     .menu-mobile{
         display: block;
     } 
+
+    .giff-animacao{
+        display: none;
+    }
+
+    .separacao{
+        display: none;
+    }
 
 }
 
@@ -435,5 +775,13 @@ a :hover{
         font-size: 20px;
     }
 
+}
+
+/* MUDAR PROJETOS */
+
+@media (max-width: 1265px){
+
+
 
 }
+
