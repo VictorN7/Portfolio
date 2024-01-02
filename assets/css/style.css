@@ -122,6 +122,7 @@ a :hover{
     font-weight: 700;
     font-size: 25px;
 }
+
  .div-container{
     height: 80vh;
     display: flex;
@@ -207,7 +208,7 @@ a :hover{
     display: flex;
     justify-content: center;
     margin: 0% 0% 0% 10%;
-    height: 90vh;
+    height: 80vh;
     width: 80%;
 }
 
@@ -219,6 +220,16 @@ a :hover{
     margin: 0% 0% 0% 10%;
     height: 140vh;
     width: 80%;
+}
+.sections3{
+    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 0% 10%;
+    height: 80vh;
+    width: 80%;
+    
 }
 
 
@@ -297,7 +308,132 @@ a :hover{
 
 
 
+/*
 
+Habilidades
+
+*/
+
+.titulo-habilidades{
+
+    margin: 0% 0% 5% 0% ;
+
+}
+
+.titulo-habilidades h2{
+    color: #161616;
+}
+
+.habilidades{
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 0% 0% 0% 0% ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div-habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    margin: 0% 0% 0% 0%; 
+    /* margin: 5% 10% 10% 10%; */
+}
+
+.conteudo-habilidades{
+    display: flex;
+}
+
+.conteudo-frontend{
+
+    width: 45vh;
+    height: 50vh;
+    background-color: #7360DF;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.itens-frontend{
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.conteudo-backend{
+    width: 45vh;
+    height: 50vh;
+    background-color: #5c5c5c;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+
+.itens-backend{
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+
+
+.conteudo-ferramentas{
+    width: 45vh;
+    height: 50vh;
+    background-color: #86B6F6;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.itens-ferramentas{
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.conteudo-conhecimentos{
+    width: 45vh;
+    height: 50vh;
+    background-color: #5479a8;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.conteudo-conhecimentos h3{
+    margin-top: 5%;
+}
+
+.conteudo-frontend h3{
+    margin-top: 5%;
+}
+.conteudo-backend h3{
+    margin-top: 5%;
+}
+.conteudo-ferramentas h3{
+    margin-top: 5%;
+}
+
+
+.titulo-habilidades h2 span{
+    color: #8f1fcf;
+}
 
 
 

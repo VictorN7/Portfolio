@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Gugi&family=Mirza&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></link>
 
     <title> Portfólio | VictorN7</title>
 </head>
@@ -31,10 +31,10 @@
 
             </div>
             <ul class="ul-container">
-                <li><a href="#quem-sou">Quem sou</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#quemsou">Quem sou</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contatos">Contato</a></li>
             </ul>
 
         </nav>
@@ -65,10 +65,10 @@
         <!-- DIV DA SETA DE INCICAÇÃO  -->
 
         <div class="div-arrow-down">
-            <a href="/Portifolio/index.html">
+            <a href="#quemsou">
                 <button class="botao-arrow-down">
                     <p>Rolar para baixo</p>
-                    <span class="material-icons" for="#quem-sou">
+                    <span class="material-icons">
                         keyboard_double_arrow_down
                     </span>
                 </button>
@@ -79,7 +79,7 @@
 
         <!-- QUEM SOU  -->
         <div class="div-todo-conteudo">
-            <section class="sections1">
+            <section class="sections1" id="quemsou">
                 <div class="quem-sou">
                     <div class="div-quem-sou">
                         <div class="titulo-sobre-mim">
@@ -88,7 +88,7 @@
                         <div class="div-sobre-mim-2">
                             <div class="conteudo-sobre-mim-1" id="quem-sou">
                                 <h3>Victor Nogueira</h3>
-                                <span>Desenvolvedor Full-Stack Jr</span>
+                                <span>Desenvolvedor Back-End</span>
                             </div>
                             <div class="separacao1"></div>
                             <div class="conteudo-sobre-mim-2" id="quem-sou">
@@ -104,10 +104,10 @@
 
             <!-- ------------ -->
             <div class="div-arrow-down">
-                <a href="/Portifolio/index.html">
+                <a href="#projetos">
                     <button class="botao-arrow-down">
                         <p>Rolar para baixo</p>
-                        <span class="material-icons" for="#quem-sou">
+                        <span class="material-icons" >
                             keyboard_double_arrow_down
                         </span>
                     </button>
@@ -116,7 +116,7 @@
 
             <section class="sections2">
                 <div class="projetos">
-                    <div class="conteudo-projetos">
+                    <div class="conteudo-projetos" id="projetos">
 
                         <div class="titulo-projetos">
                             <h2><span>• </span> Projetos</h2>
@@ -143,7 +143,8 @@
                                                 <div class="face face2">
                                                     <div class="content">
                                                         <p>Site de previsão de clima/tempo.</p>
-                                                        <a href="#">Clique Aqui</a>
+                                                        
+                                                        <a href="https://victorn7.github.io/WeatherDash/" target="_blank">Clique Aqui</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -158,7 +159,7 @@
                                                 <div class="face face2">
                                                     <div class="content">
                                                         <p>Site de Dashboard de vendas com diversos graficos.</p>
-                                                        <a href="#">Clique Aqui</a>
+                                                        <a href="https://springreact-victorn7.netlify.app" target="_blank">Clique Aqui</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -173,7 +174,7 @@
                                                 <div class="face face2">
                                                     <div class="content">
                                                         <p>Site de cadastro de pedidos feitos em Java.</p>
-                                                        <a href="#">Clique Aqui</a>
+                                                        <a href="https://github.com/VictorN7/CadastroDePedidos" target="_blank">Clique Aqui</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -188,7 +189,7 @@
                                                 <div class="face face2">
                                                     <div class="content">
                                                         <p>Site de Calculo do IMC(Indice de Massa Corporal).</p>
-                                                        <a href="#">Clique Aqui</a>
+                                                        <a href="https://victorn7.github.io/IMC-CALCULADORA/" target="_blank">Clique Aqui</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -203,7 +204,7 @@
                                                 <div class="face face2">
                                                     <div class="content">
                                                         <p>Aplicação em Andamento</p>
-                                                        <a href="#">Não Clique Aqui</a>
+                                                        <a>Não Clique Aqui</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -218,7 +219,7 @@
                                                 <div class="face face2">
                                                     <div class="content">
                                                         <p>Aplicação em Andamento</p>
-                                                        <a href="#">Não Clique Aqui</a>
+                                                        <a>Não Clique Aqui</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -234,7 +235,79 @@
             </section>
 
             <div class="div-arrow-down">
-                <a href="/Portifolio/index.html">
+                <a href="#habilidades">
+                    <button class="botao-arrow-down">
+                        <p>Rolar para baixo</p>
+                        <span class="material-icons" for="#quem-sou">
+                            keyboard_double_arrow_down
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <section class="sections3" id="habilidades">
+                <div class="habilidades">
+                    <div class="div-habilidades">
+                        <div class="titulo-habilidades">
+                            <h2><span>• </span>Habilidades</h2>
+                        </div>
+                        <div class="div-habilidades-2">
+                            <div class="conteudo-habilidades">
+
+                                <div class="conteudo-frontend">
+                                    <h3>Front-End</h3>
+                                    <div class="itens-frontend">
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Javascript</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="conteudo-backend">
+                                    <h3>Back-End</h3>
+                                    <div class="itens-backend">
+                                        <ul>
+                                            <li>Java</li>
+                                            <li>MySQL Server</li>
+                                            <li>PostgreSQL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="conteudo-ferramentas">
+                                    <h3>Ferramentas</h3>
+                                    <div class="itens-ferramentas">
+                                        <ul>
+                                            <li>Spring Framework</li>
+                                            <li>Spring Tool Suite</li>
+                                            <li>Eclipse IDE</li>
+                                            <li>Bootstrap</li>
+                                            <li>VS Code</li>
+                                            <li>PostgreSQL</li>
+                                            <li>MySQL Workbench</li>
+                                            <li>Postman</li>
+                                            <li>Git e Github</li>
+                                        </ul>
+                                    </div>
+                                </div>
+<!--
+                                <div class="conteudo-conhecimentos">
+                                    <h3>Conhecimentos</h3>
+                                    <div class="itens-conhecimentos">
+
+                                    </div>
+                                </div>
+                                -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="div-arrow-down">
+                <a href="#contatos">
                     <button class="botao-arrow-down">
                         <p>Rolar para baixo</p>
                         <span class="material-icons" for="#quem-sou">
@@ -253,14 +326,14 @@
     </main>
     <footer class="footer-container">
         <div class="div-footer">
-            <div class="div-conteudo-footer">
+            <div class="div-conteudo-footer" id="contatos">
                 <div>
                     <h3>Entre em Contato</h3>
                 </div>
                 <div class="icones-contato">
-                    <a class="icone1" href=""><i class="fab fa-github"></i></a>
-                    <a class="icone2" href=""><i class="fab fa-linkedin"></i></a>
-                    <a class="icone3" href=""><i class="far fa-envelope"></i></a>
+                    <a class="icone1" href="https://github.com/VictorN7" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="icone2" href="https://www.linkedin.com/in/victor-nogueira-32a519184/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="icone3" href="mailto:victorhnogueira@hotmail.com?" target="_blank"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -271,6 +344,7 @@
         </div>
     </footer>
     <script src="assets/js/navbar-mobile.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/b55113ff63.js" crossorigin="anonymous"></script>
 </body>
 
