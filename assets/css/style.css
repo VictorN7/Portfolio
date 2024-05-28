@@ -1,0 +1,1239 @@
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+--------------------------- MENU DE NAVEGAÇÃO -----------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a :hover{
+    opacity: 0.7;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #8f1fcf;
+    transition: 1.8s ease-out;
+    border-bottom: 1px solid #ffffff00;
+    text-decoration: none;
+}
+.logo:hover {
+    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    transition:  1.8s ease-in ;
+    border-bottom: 1px solid #8f1fcf;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242424;
+    height: 12vh;
+    color: #ffffff;
+}
+
+.ul-container{
+    display: flex;
+    margin: 0%;
+}
+
+.ul-container li {
+    margin-left: 30px; 
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+.ul-container li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.ul-container li a:hover {
+    color: rgb(97, 29, 185);
+    
+}
+
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+
+}
+.menu-mobile div{
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    margin: 8px;
+    transition: 0.3s;
+}
+/* Essa classe .active vai ser criada pelo js */
+.ul-container.active{
+    transform: translateX(0);
+}
+
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+--------------------------- APRESENTAÇÃO ----------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.div-container1 span{
+    color: #8f1fcf;
+    font-weight: 700;
+    font-size: 25px;
+}
+.titulo-h2{
+    font-size: 50px;
+}
+.separacao{
+    height: 60vh;
+    background: #8f1fcf;
+    width: 8px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.minha-foto{
+    height: 60vh;
+    box-shadow: 3px 5px 0px 0px #750db1;
+    border-radius: 300px;
+    
+}
+ .div-container{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.div-conteudo{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#quem-sou{
+    transition: 0.3s ease-in;
+}
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+------------------------ FLECHA DE INDICAÇÃO ------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.div-arrow-down{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0% 1% 0%;   
+}
+
+.botao-arrow-down{
+    background-color: #f7f7f700;
+    color: #8f1fcf;
+    border: none;
+    transition: 1.2s ease-out;
+    font-size: 15px;
+    animation: OscilarCor 3s infinite;
+}
+
+.botao-arrow-down p{
+    margin: 0%;
+}
+
+@keyframes OscilarCor {
+    0% {
+        color: #8f1fcf;
+    }
+    50% {
+        color: #ffffff;
+    }
+    100% {
+        color: #8f1fcf;
+    }
+}
+.botao-arrow-down:hover {
+   color: #a0a0a0;
+   transition: 1.5s ease-in;
+   animation: none;
+}
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+--------------------------- QUEM SOU --------------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.sections1{
+    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0% 0% 10%;
+    height: 90vh;
+    width: 80%;
+}
+
+.quem-sou{
+    background-color: #161616;
+    border-radius: 4px;
+    margin: 0% 0% 0% 0% ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-quem-sou{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    margin: 0% 0% 0% 0%; 
+    /* margin: 5% 10% 10% 10%; */
+}
+
+.separacao1{
+    height: 30vh;
+    width: 2px;
+    background-color: #8f1fcf;
+    margin: 0% 2% 2% 0% ;
+}
+
+.div-todo-conteudo{
+    background-color: #ffffff;
+}
+.div-sobre-mim-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:  5% 5% 5% 5%;
+}
+
+.titulo-sobre-mim{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.titulo-sobre-mim h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+.titulo-sobre-mim span{
+    font-size: 30px;
+    color: #8f1fcf;
+}
+
+.conteudo-sobre-mim-1{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+
+.conteudo-sobre-mim-2{
+    width:100%;
+    height: 100%;
+    font-size: 20px;
+}
+.conteudo-sobre-mim-1 h3 {
+    font-size: 40px;
+}
+.conteudo-sobre-mim-1 span {
+    font-size: 25px;
+    color: #8f1fcf;
+}
+.conteudo-sobre-mim{
+    width:100%;
+    height: 100%;
+}
+
+
+
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+--------------------------- CONHECIMENTOS ---------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.sections3{
+    background-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 10% 0%;
+    height: 60vh;
+    width: 100%;
+}
+
+.titulo-conhecimentos{
+
+    margin: 0% 0% 5% 0% ;
+
+}
+
+.titulo-conhecimentos h2{
+    color: #161616;
+    font-size: 30px;
+}
+
+.conhecimentos{
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 0% 0% 0% 0% ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.itens-conhecimentos{
+    color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagens-conhecimentos{
+    height: 80px;
+    margin: 1% 2% 2% 1%;
+    border-radius: 10px;
+}
+.div-conhecimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    margin: 0% 0% 0% 0%; 
+}
+
+.conteudo-conhecimentos{
+    display: flex;
+}
+
+.titulo-conhecimentos h2 span{
+    color: #8f1fcf;
+}
+
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+--------------------------- PROJETOS --------------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.sections2{
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 0% 0% 0% 10%;
+    height: 140vh;
+    width: 80%;
+}
+
+.titulo-projetos{
+    
+    margin-top: 5%;
+    margin-bottom: 20px;
+
+}
+
+.titulo-projetos h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+.titulo-projetos h2 span{
+    font-size: 30px;
+    color: #8f1fcf;
+}
+
+.projetos{
+    background-color: #161616;
+    border-radius: 4px;
+    margin: 0% 0% 1% 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo-projetos{
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-projeto{
+    background-color: #242424; 
+    width: 30%;
+    height: 35%;
+    border-radius: 5px;
+   
+}
+.bloco-projeto div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.bloco-projeto h3{
+    font-size: 20px;
+}
+
+.bloco-projeto a:hover{
+    color: #8f1fcf;
+    filter: blur(9);
+    border: 10px solid #451fcf;
+    border-radius: 100px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 2% 2% 2% 2% ;
+}
+
+.face{
+    width: 300px;
+    height: 200px;
+    transition: 0.9s;
+}
+
+.face.face1{
+    position: relative;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background-color: #161616;
+    transform: translateY(0px);
+}
+
+ .content{
+    opacity: 1;
+}
+
+.content img{
+    max-width: 100px;
+    align-items: center;
+}
+
+ .content h3{
+    margin: 10px 0 0;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.face.face2{
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    box-sizing: border-box;
+   
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0px);
+}
+
+.content p{
+    color: #161616;
+    margin: 0%;
+    padding: 0%;
+}
+
+.content a{
+    margin: 15px 0 0;
+    display: inline-block;
+
+    text-decoration: none;
+    font-weight: 900;
+    color: #8f1fcf;
+    padding: 5px;
+    
+}
+
+.content a:hover{
+    background-color: #8f1fcf;
+    color: #fff;
+}
+
+
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+------------------------- FOOTER / ENTRE EM CONTATO -----------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+.footer-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    border-top: solid 2px #8f1fcf;
+    animation: corBorder 10s infinite;
+    background-color: #333333;
+}
+
+@keyframes corBorder{
+    0%{
+        border-top:solid 5px #272727;
+    }
+    50%{
+        border-top:solid 5px #8f1fcf;;
+    }
+    100%{
+       border-top:solid 5px #272727;
+    }
+}
+
+.div-footer{
+    width: 100%;
+    height: 80%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-conteudo-footer{
+   
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-conteudo-footer h3{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.icones-contato{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.icones-contato a i{
+    font-size: 30px;
+    transition: 0.5s ease-out;
+    
+}
+.icones-contato a{
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.div-footer2{
+    width: 100%;
+    height: 30%;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-conteudo-footer2{
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.icone1:hover{
+    font-size: 50px;
+    color: #8f1fcf;
+    transition: 0.5s ease-in;
+   
+}
+
+.icone2:hover{
+    font-size: 50px;
+    color: #1f8fcf;
+    transition: 0.5s ease-in;
+    
+}
+
+.icone3:hover{
+    font-size: 50px;
+    color: #ffee00;
+    transition: 0.5s ease-in;
+    
+}
+
+
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+------------------------- MENU DE NAVEGAÇÃO -------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+@keyframes navOpacidade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-mobile.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu-mobile.active .linha2{
+    opacity: 0;
+}
+
+.menu-mobile.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/*-------------------------------------------------------------------
+---------------------------------------------------------------------
+------------------------- MEDIA QUERIES -----------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+@media (max-width: 1265px){
+
+
+    /* PROJETOS */
+
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+    .card .face {
+        width: 200px;
+        height: 200px;
+        transition: 0.9s;
+    }
+
+    /*-------------------------*/
+
+}
+
+@media (max-width: 1200px){
+
+
+    /* QUEM SOU */
+
+    .conteudo-sobre-mim-1 h3 {
+        font-size: 30px;
+    }
+    .div-quem-sou span {
+
+        font-size: 20px;
+    }
+    .conteudo-sobre-mim-2 p {
+        font-size: 15px;
+    }
+    .div-sobre-mim-2{
+        display: grid;
+        justify-content: space-between;
+    }
+    .div-quem-sou {
+        
+        margin-top: 0%;
+    }
+    .conteudo-sobre-mim-2{
+        padding-top: 10%;
+    }
+    .conteudo-sobre-mim-1 h3{
+        font-size: 25px;
+    }
+    .separacao1{
+        display: none;
+    }
+
+    /*-------------------------*/
+
+     /* ENTRE EM CONTATO */
+
+     .div-conteudo-footer h3{
+        font-size: 26px;
+    }
+
+    /*-------------------------*/
+}
+
+@media (max-width: 990px){
+
+    /* APRESENTAÇÃO */
+
+
+    .div-container{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .minha-foto{
+        display: none;
+    }
+
+    .separacao{
+        display: none;
+    }
+
+    /*--------------------*/
+
+    /* ENTRE EM CONTATO */
+
+    .div-footer2{
+        font-size: 14px;
+    }
+
+    /*--------------------*/
+
+    /* Esconde do body qualquer coisa que transbordar/ultrapassar */
+
+    body{
+        overflow-x: hidden;  
+    }
+
+    /*--------------------*/
+
+    /* MENU DE NAVEGAÇÃO */
+
+    .logo{
+        font-size: 20px;
+    }
+    .menu-mobile div{
+        width: 24px;
+        height: 2px;
+        margin: 6px;
+    }
+    .ul-container {
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #272727;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);  /*expande o width até o limite de 50vw, mas precisa do overflow-x: hiddern; */
+        transition: transform 0.4s ease-in; /* ease-in = chegada suave */
+    }
+   .ul-container li{
+        margin-left: 0%;
+        opacity: 0;
+    }
+    .menu-mobile{
+        display: block;
+    } 
+
+    /*--------------------*/
+
+}
+
+@media (max-width: 920px){
+
+    /* APRESENTAÇÃO */
+
+    .titulo-h2{
+        font-size: 40px;
+    }
+    .div-container1 span{
+        font-size: 26px;
+    }
+    .div-conteudo{
+        font-size: 20px;
+    }
+
+    /*-------------------------*/
+
+     /* PROJETOS */
+
+    .content h3{
+        font-size: 22px;
+        
+    }
+
+    /*-------------------------*/
+
+     /* ENTRE EM CONTATO */
+
+     .div-conteudo-footer h3{
+        font-size: 24px;
+    }
+
+    /*-------------------------*/
+
+    
+}
+
+@media (max-width: 850px){
+
+     .card {
+        width: 200px;
+        height: 300px;
+    }
+    
+    .card .face {
+        width: 200px;
+        height: 200px;
+        transition: 0.9s;
+    }
+
+    .titulo-projetos{
+       margin-bottom: 0%;
+    }
+
+    .sections2{
+        height: 170vh;
+    }
+
+     /* ENTRE EM CONTATO */
+
+     .div-conteudo-footer h3{
+        font-size: 22px;
+    }
+
+    /*-------------------------*/
+}
+
+@media (max-width: 780px){
+
+    /* APRESENTAÇÃO */
+
+    .titulo-h2{
+        font-size: 34px;
+    }
+    .div-container1 span{
+        font-size: 24px;
+    }
+    .div-conteudo{
+        font-size: 18px;
+    }
+
+    /*-------------------------*/
+
+    /* PROJETOS */
+
+    .content h3{
+        font-size: 20px;    
+    }
+
+    /*-------------------------*/
+
+    .div-container1{
+        font-size: 30px;
+    }
+    .titulo-sobre-mim h2 {
+        font-size: 30px;
+    }
+    .quem-sou{
+        height: 90%;
+    }
+    .conteudo-sobre-mim-1 h3{
+        font-size: 20px;
+    }
+
+    /* CONHECIMENTOS */
+
+    .imagens-conhecimentos{
+        height: 70px;
+    }
+
+    /*-------------------------*/
+}
+
+@media (max-width: 650px){
+
+    .conteudo-conhecimentos{
+ 
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }   
+
+    .sections3{
+        height: 50vh;
+        width: 100%;
+    }
+
+
+     /* ENTRE EM CONTATO */
+
+     .div-conteudo-footer h3{
+        font-size: 20px;
+    }
+
+    /*-------------------------*/
+
+}
+
+@media (max-width: 580px) {
+
+    
+    /* APRESENTAÇÃO */
+
+    .titulo-h2{
+        font-size: 30px;
+    }
+
+    .div-container1 span{
+        font-size: 22px;
+    }
+
+    .div-conteudo{
+        font-size: 16px;
+    }
+
+    /*-------------------------*/
+
+    /* QUEM SOU */
+
+    .sections1{
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+    }
+    .titulo-sobre-mim h2{
+        font-size: 25px;
+    }
+
+    /*-------------------------*/
+    
+    /* PROJETOS */
+
+    .sections2{
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+    }
+    .titulo-projetos h2{
+        font-size: 25px;
+    }
+    .content h3{
+    font-size: 18px;    
+    }
+
+    /*-------------------------*/
+
+    /* CONHECIMENTOS */
+
+    .titulo-conhecimentos h2{
+        font-size: 25px;
+    }
+    .imagens-conhecimentos{
+        height: 60px;
+    }
+
+    /*-------------------------*/
+
+    /* ENTRE EM CONTATO */
+
+    .div-conteudo-footer h3{
+        font-size: 18px;
+    }
+
+    /*-------------------------*/
+
+}
+
+@media (max-width: 500px){
+
+
+    /* QUEM SOU */
+    
+    .titulo-sobre-mim h2 {
+        font-size: 25px;
+    }
+
+    .conteudo-sobre-mim-1 h3 {
+        font-size: 20px;
+    }
+    .div-quem-sou span {
+
+        font-size: 15px;
+    }
+    .conteudo-sobre-mim-2 p {
+        font-size: 12px;
+    }
+    .sections1{
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+    }
+    .quem-sou{
+        margin: 0% 0% 0% 0%;
+    }
+    .sections1{
+        width: 100%;
+        height: 70vh;
+        margin: 0% 0% 0% 0%;
+    }
+    .div-quem-sou{
+        height: 100%;
+    }
+
+    /*-------------------------*/
+
+    /* PROJETOS */
+
+    .sections2{
+        width: 100%;
+        margin: 0% 0% 10% 0%;
+    }
+    
+    /*-------------------------*/
+}
+
+@media (max-width: 480px) {
+
+
+    /* APRESENTAÇÃO */
+
+    .titulo-h2{
+        font-size: 28px;
+    }
+
+    .div-container1 span{
+        font-size: 22px;
+    }
+
+    .div-conteudo{
+        font-size: 14px;
+    }
+    /*-------------------------*/
+
+    /* PROJETOS */
+
+    .content h3{
+        font-size: 16px;    
+    }
+
+    .content img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+    
+    .content p {
+        font-size: 12px;
+    }
+
+    .content a {
+        font-size: 14px;
+    }
+   
+    .card {
+        width: 120px;
+        height: 260px;
+    }
+
+    .face.face1 {
+        width: 120px;
+        height: 200px;
+    }
+
+    .face.face2 {
+        width: 120px;
+        height: 130px;
+    }
+    .sections2{
+        height: 120vh;
+    }
+
+    /* ENTRE EM CONTATO */
+
+    .div-conteudo-footer{
+        width: 100%;
+    }
+
+    .div-conteudo-footer h3{
+        font-size: 16px;
+    }
+
+    .div-conteudo-footer2{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    /*-------------------------*/
+
+}
+
+@media (max-width: 440px) {
+
+
+    /* APRESENTAÇÃO */
+
+    .titulo-h2{
+        font-size: 24px;
+    }
+
+    .div-container1 span{
+        font-size: 20px;
+    }
+
+    .div-conteudo{
+        font-size: 14px;
+    }
+    /*-------------------------*/
+
+    /* PROJETOS */
+
+    .content h3{
+        font-size: 14px;    
+    }
+    .card {
+        width: 120px;
+        height: 260px;
+    }
+    .face.face1 {
+        width: 120px;
+        height: 200px;
+    }
+    .face.face2 {
+        width: 120px;
+        height: 130px;
+    }
+
+    .sections2{
+        height: 160vh;
+    }
+
+    /*-------------------------*/
+
+    /* conhecimentos */
+
+    .sections3 {
+        height: 50vh;
+        width: 100%;
+    }
+
+    /*-------------------------*/
+
+    /* SETA DE ROLAR PARA BAIXO */
+
+    .botao-arrow-down{
+        font-size: 12px;
+    }
+
+    /*-------------------------*/
+}
+
+@media (max-width: 350px ){
+
+
+    /* APRESENTAÇÃO */
+
+    .titulo-h2{
+        font-size: 20px;
+    }
+    .div-container1 span{
+        font-size: 16px;
+    }
+    .div-conteudo{
+        font-size: 12px;
+    }
+
+    /*-------------------------*/
+
+    /* QUEM SOU */
+
+    .sections1{
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+    }
+    .quem-sou{
+        margin: 0% 0% 0% 0%;
+    }
+    .titulo-sobre-mim h2{
+        font-size: 22px;
+    }
+    .conteudo-sobre-mim-1 h3{
+        font-size: 18px;
+    }
+
+    .conteudo-sobre-mim-2 p{
+        font-size: 12px;
+    }
+    .div-quem-sou span{
+        font-size: 15px;
+    }
+
+    /*-------------------------*/
+
+    /* PROJETOS */
+
+    .titulo-projetos h2{
+        font-size: 22px;
+    }
+
+    /*-------------------------*/
+
+    /* conhecimentos */
+
+    .titulo-conhecimentos h2{
+        font-size: 22px;
+    }
+    
+    /*-------------------------*/
+}
